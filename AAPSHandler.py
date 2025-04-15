@@ -201,9 +201,9 @@ class AAPSHandler:
         self.message = "ti-" + datetime.datetime.now().strftime('%H:%M:%S') + ' '
         self.client_socket.send(self.message.encode())
 
+########### FOR TESTING ONLY ################################
 #handler = AAPSHandler()
 #handler.initializePatient(patient_name="adolescent#001.mat")
-#print("Ez megy??")
 #while True:
 #    print(handler.getBloodGlucose(aggregated=True))
 #    time.sleep(300)
